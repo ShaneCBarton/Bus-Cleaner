@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
     {
         movementDirection = playerOrientation.forward * verticalInput + playerOrientation.right * horizontalInput;
 
-        if (horizontalInput > 0 || verticalInput > 0)
+        if (movementDirection != Vector3.zero) 
         {
             rb.AddForce(movementDirection.normalized * moveSpeed * 10f, ForceMode.Force);
         }
