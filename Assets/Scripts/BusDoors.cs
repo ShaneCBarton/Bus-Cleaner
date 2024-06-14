@@ -1,44 +1,32 @@
 
 using UnityEngine;
 
-public class BusDoors : Interactable
+public class BusDoors : MonoBehaviour, IInteractable
 {
-    [SerializeField] private GameObject rightDoorFront;
-    [SerializeField] private GameObject leftDoorFront;
-    [SerializeField] private GameObject rightDoorBack;
-    [SerializeField] private GameObject leftDoorBack;
+    [SerializeField] private GameObject rightDoor;
+    [SerializeField] private GameObject leftDoor;
 
-    [SerializeField] private float rightDoorFrontRotation;
-    [SerializeField] private float leftDoorFrontRotation;
-    [SerializeField] private float rightDoorBackRotation;
-    [SerializeField] private float leftDoorBackRotation;
+    [SerializeField] private float rightDoorRotation;
+    [SerializeField] private float leftDoorRotation;
+
+    [SerializeField] private BoxCollider doorCollider;
 
     private bool doorsOpen = false;
-    private Transform rightDoorStart;
-    private Transform leftDoorStart;
 
-    private void Start()
-    {
-        rightDoorStart = rightDoorFront.transform;
-        leftDoorStart = leftDoorFront.transform;
-    }
-
-    public override void ExecuteInteraction()
+    public void ExecuteInteraction()
     {
         if (!doorsOpen)
         {
-            rightDoorFront.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, rightDoorFrontRotation, 0f), 5f);
-            leftDoorFront.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, leftDoorFrontRotation, 0f), 5f);
-            rightDoorBack.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, rightDoorBackRotation, 0f), 5f);
-            leftDoorBack.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, leftDoorBackRotation, 0f), 5f);
+            rightDoor.transform.Rotate(0, rightDoorRotation, 0);
+            leftDoor.transform.Rotate(0, leftDoorRotation, 0);
+            doorCollider.enabled = false;
             doorsOpen = true;
         } 
         else
         {
-            rightDoorFront.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, -28.532f, 0f), 5f);
-            leftDoorFront.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, -28.532f, 0f), 5f);
-            rightDoorBack.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, -28.532f, 0f), 5f);
-            leftDoorBack.transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, -28.532f, 0f), 5f);
+            rightDoor.transform.Rotate(0, -rightDoorRotation, 0);
+            leftDoor.transform.Rotate(0, -leftDoorRotation, 0);
+            doorCollider.enabled = true;
             doorsOpen = false;
         }
 

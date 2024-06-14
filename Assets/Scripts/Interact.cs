@@ -18,9 +18,9 @@ public class Interact : MonoBehaviour
             
             if(Physics.Raycast(ray, out hit, interactDistance))
             {
-                Interactable interactable = hit.transform.GetComponent<Interactable>();
+                IInteractable interactable = hit.transform.GetComponent<IInteractable>();
 
-                if (interactable)
+                if (interactable != null)
                 {
                     interactable.ExecuteInteraction();
                 }
