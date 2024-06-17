@@ -5,10 +5,11 @@ public class ObjectiveManager : MonoBehaviour
     [SerializeField] private int requiredObjectives;
     [SerializeField] private GameManagerState gameState;
 
-    private float completedObjectives;
+    public int CompletedObjectives { get; private set; }
+
     private void Update()
     {
-        if (completedObjectives == requiredObjectives)
+        if (CompletedObjectives == requiredObjectives)
         {
             gameState.ChangeState(GameManagerState.State.COMPLETED);
         }
@@ -16,7 +17,6 @@ public class ObjectiveManager : MonoBehaviour
 
     public void CompletedObjective()
     {
-        completedObjectives++;
+        CompletedObjectives++;
     }
-
 }

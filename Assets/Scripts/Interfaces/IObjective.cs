@@ -4,8 +4,7 @@ public interface IObjective
     int ID { get; }
     bool IsCompleted { get; }
 
-    public bool CheckIfCompleted()
+    public void CheckIfCompleted()
     {
-        return IsCompleted;
     }
 }
