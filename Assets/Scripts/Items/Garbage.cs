@@ -6,7 +6,6 @@ public class Garbage : MonoBehaviour, IInteractable
 
     public void ExecuteInteraction()
     {
-        Debug.Log("Picked up garbage");
         objManager.CompletedObjective();
         Destroy(gameObject);
     }
