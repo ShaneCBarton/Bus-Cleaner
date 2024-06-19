@@ -4,12 +4,13 @@ public class BusDirt : MonoBehaviour, IInteractable
 {
     [SerializeField] private ObjectiveManager objManager;
     [SerializeField] PlayerInventory playerInventory;
+    [SerializeField] private DirtObjectives dirtObjectives; 
 
     public void ExecuteInteraction()
     {
         if (playerInventory.CurrentItem == ItemID.SoapBucket)
         {
-            Debug.Log("You cleaned the dirt");
+            dirtObjectives.IncrementCompletedDirt();
             Destroy(gameObject);
         }
     }
