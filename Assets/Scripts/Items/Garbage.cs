@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class Garbage : MonoBehaviour, IInteractable
 {
-    [SerializeField] private ObjectiveManager objManager;
+    [SerializeField] PlayerInventory playerInventory;
+    [SerializeField] private LitterObjectives litterObjectives;
 
     public void ExecuteInteraction()
     {
-        objManager.CompletedObjective();
-        Destroy(gameObject);
+        if (playerInventory.CurrentItem == ItemID.TrashBag)
+        {
+            litterObjectives.IncrementCompletedLitter();
+            Destroy(gameObject);
+        }
     }
 }
