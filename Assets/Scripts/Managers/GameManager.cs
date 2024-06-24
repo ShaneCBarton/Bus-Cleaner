@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         CalculateTime();
+        CheckTimer();
     }
 
     private void CalculateTime()
@@ -25,5 +26,13 @@ public class GameManager : MonoBehaviour
         string seconds = (time % 60).ToString();
 
         TimeRemaining = minutes + ":" + seconds;
+    }
+
+    private void CheckTimer()
+    {
+        if (timeLimit <= 0)
+        {
+            gameState.ChangeState(GameManagerState.State.FAILED);
+        }
     }
 }
