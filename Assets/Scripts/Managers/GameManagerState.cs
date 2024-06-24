@@ -26,7 +26,6 @@ public class GameManagerState : MonoBehaviour
 
             case State.FAILED:
                 // do failed stuff ie. total objectives completed, failed, bring up menu
-                Debug.Log("You ran out of time");
                 //Time.timeScale = 0;
                 break;
         }
