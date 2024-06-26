@@ -12,23 +12,39 @@ public class BusDoors : MonoBehaviour, IInteractable
     [SerializeField] private BoxCollider doorCollider;
 
     private bool doorsOpen = false;
+    private bool busIsSealed = false;
 
     public void ExecuteInteraction()
     {
         if (!doorsOpen)
         {
-            rightDoor.transform.Rotate(0, rightDoorRotation, 0);
-            leftDoor.transform.Rotate(0, leftDoorRotation, 0);
-            doorCollider.enabled = false;
-            doorsOpen = true;
-        } 
-        else
-        {
-            rightDoor.transform.Rotate(0, -rightDoorRotation, 0);
-            leftDoor.transform.Rotate(0, -leftDoorRotation, 0);
-            doorCollider.enabled = true;
-            doorsOpen = false;
+            OpenDoors();
         }
+    }
 
+    public void CloseBus()
+    {
+        CloseDoors();
+        busIsSealed = true;
+    }
+
+    private void OpenDoors()
+    {
+        if (busIsSealed) { return; }
+
+        rightDoor.transform.Rotate(0, rightDoorRotation, 0);
+        leftDoor.transform.Rotate(0, leftDoorRotation, 0);
+        doorCollider.enabled = false;
+        doorsOpen = true;
+    }
+
+    private void CloseDoors()
+    {
+        if (busIsSealed) { return; }
+
+        rightDoor.transform.Rotate(0, -rightDoorRotation, 0);
+        leftDoor.transform.Rotate(0, -leftDoorRotation, 0);
+        doorCollider.enabled = true;
+        doorsOpen = false;
     }
 }
