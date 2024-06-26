@@ -3,6 +3,7 @@ using UnityEngine;
 public class DebugInventory : MonoBehaviour
 {
     [SerializeField] private PlayerInventory inventory;
+    [SerializeField] private GameObject heaterPopup;
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +22,10 @@ public class DebugInventory : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.I))
         {
             inventory.PickedUpItem(ItemID.HotWaterBucket);
+        } 
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            heaterPopup.SetActive(true);
         }
     }
 }
