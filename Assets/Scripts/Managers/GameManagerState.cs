@@ -21,12 +21,11 @@ public class GameManagerState : MonoBehaviour
         switch (currentState)
         {
             case State.COMPLETED:
-                // do completion stuff ie. total objectives completed, failed, time taken, bring up menu
+                Debug.Log("You completed your training!");
                 break;
 
             case State.FAILED:
-                // do failed stuff ie. total objectives completed, failed, bring up menu
-                //Time.timeScale = 0;
+                Debug.Log("You Failed your training!");
                 break;
         }
     }

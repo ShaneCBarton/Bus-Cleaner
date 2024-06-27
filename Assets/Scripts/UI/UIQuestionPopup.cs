@@ -54,7 +54,6 @@ public class UIQuestionPopup : MonoBehaviour
         CloseWindow();
     }
 
-
     private void CloseWindow()
     {
         Cursor.lockState = CursorLockMode.Locked;
