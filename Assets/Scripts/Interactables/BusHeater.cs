@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class BusHeater : MonoBehaviour, IInteractable
 {
+    [SerializeField] private GameObject heaterUIPopup;
     [SerializeField] private ObjectiveManager objManager;
 
-    public void ExectuteInteraction()
+    public void ExecuteInteraction()
     {
-        //UI Popup with multiple choice options
-        //if correct answer
-        //{
-        //  objManager.CompletedObjective();
-        //}
+        if (objManager.CompletedObjectives == 5)
+        {
+            heaterUIPopup.SetActive(true);
+        }
     }
 }
