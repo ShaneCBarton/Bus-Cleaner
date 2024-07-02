@@ -824,7 +824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abe740c4d65ebf4294d0e5a087cddef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 9350d207763e49744beffe39a5ffb9c1, type: 3}
+  hoverClip: {fileID: 8300000, guid: 9350d207763e49744beffe39a5ffb9c1, type: 3}
+  clickClip: {fileID: 8300000, guid: fa0f97f31f3cb03478901efce700daf1, type: 3}
 --- !u!114 &486043756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -854,6 +855,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 486043757}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: fa0f97f31f3cb03478901efce700daf1, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &486043757
 AudioSource:
   m_ObjectHideFlags: 0
@@ -866,7 +883,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.75
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1050,7 +1067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4778862500145076938, guid: 3c56c718283cea44f8e41dfb99779bc4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.67
+      value: -3.85
       objectReference: {fileID: 0}
     - target: {fileID: 4778862500145076938, guid: 3c56c718283cea44f8e41dfb99779bc4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1982,7 +1999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abe740c4d65ebf4294d0e5a087cddef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 9350d207763e49744beffe39a5ffb9c1, type: 3}
+  hoverClip: {fileID: 8300000, guid: 9350d207763e49744beffe39a5ffb9c1, type: 3}
+  clickClip: {fileID: 8300000, guid: fa0f97f31f3cb03478901efce700daf1, type: 3}
 --- !u!114 &1642934408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2012,6 +2030,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1642934409}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: fa0f97f31f3cb03478901efce700daf1, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1642934409
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2024,7 +2058,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.75
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2847,7 +2881,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.75
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2960,6 +2994,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2100765767}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: fa0f97f31f3cb03478901efce700daf1, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &2100765769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2972,7 +3022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abe740c4d65ebf4294d0e5a087cddef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 9350d207763e49744beffe39a5ffb9c1, type: 3}
+  hoverClip: {fileID: 8300000, guid: 9350d207763e49744beffe39a5ffb9c1, type: 3}
+  clickClip: {fileID: 8300000, guid: fa0f97f31f3cb03478901efce700daf1, type: 3}
 --- !u!1 &2118420667
 GameObject:
   m_ObjectHideFlags: 0
