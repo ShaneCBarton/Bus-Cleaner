@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4040185714966170147
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_Name
+      value: SM_Prop_Sign_Wetfloor_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.654
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.182
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96101874
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.27648348
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 32.101
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4b55b8f32aad29440a50ec0c9fe99a37, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3501079531136878175}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8959189430530187672}
+  m_SourcePrefab: {fileID: 100100000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+--- !u!1 &4040185714966203523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: eecdbd668a6161e498819c219dba97fc, type: 3}
+  m_PrefabInstance: {fileID: 4040185714966170147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3501079531136878175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4040185714966203523}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.42950866, y: 0.78606826, z: 0.4590277}
+  m_Center: {x: 0, y: 0.39303413, z: 0.0000003054738}
+--- !u!114 &8959189430530187672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4040185714966203523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99d386e5a91cc14488e5a259e8acf88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  busDoorsFront: {fileID: 0}
+  busDoorsRear: {fileID: 0}
+  signUIPopup: {fileID: 0}
+  objManager: {fileID: 0}
