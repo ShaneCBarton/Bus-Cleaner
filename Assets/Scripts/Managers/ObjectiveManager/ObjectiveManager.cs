@@ -5,6 +5,7 @@ public class ObjectiveManager : MonoBehaviour
     [SerializeField] private int requiredObjectives;
     [SerializeField] private GameManagerState gameState;
     [SerializeField] private ObjectiveCompleteAudioEffect objFX;
+    [SerializeField] private TaskTextEffect taskTextEffect;
 
     public int CompletedObjectives { get; private set; }
 
@@ -19,6 +20,7 @@ public class ObjectiveManager : MonoBehaviour
     public void CompletedObjective()
     {
         objFX.PlayObjectiveJingle();
+        taskTextEffect.PlayTextEffect();
         CompletedObjectives++;
     }
 }
