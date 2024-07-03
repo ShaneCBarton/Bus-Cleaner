@@ -6,9 +6,19 @@ public class EquipItem : MonoBehaviour, IInteractable
     [SerializeField] GameObject ItemUIIcon;
     [SerializeField] ItemID itemID;
 
+    [SerializeField] private AudioClip itemPickupClip;
+
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void ExecuteInteraction()
     {
         inventory.PickedUpItem(itemID);
+        audioSource.PlayOneShot(itemPickupClip);
         Transform parent = ItemUIIcon.transform.parent;
 
         foreach (Transform child in parent)
