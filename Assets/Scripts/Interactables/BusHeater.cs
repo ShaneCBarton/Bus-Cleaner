@@ -7,7 +7,7 @@ public class BusHeater : MonoBehaviour, IInteractable
 
     public void ExecuteInteraction()
     {
-        if (objManager.CompletedObjectives == 0)
+        if (objManager.CompletedObjectives == 5)
         {
             heaterUIPopup.SetActive(true);
         }

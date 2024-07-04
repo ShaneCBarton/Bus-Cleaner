@@ -7337,7 +7337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tasks Failed
+  m_text: Tasks completed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8e1110d1b198e474eaf9c437a8a6b293, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: ebecf66088a0a0a448b0d8b7995a0337, type: 2}
@@ -8930,7 +8930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 5 days
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8e1110d1b198e474eaf9c437a8a6b293, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: ebecf66088a0a0a448b0d8b7995a0337, type: 2}
@@ -8957,8 +8957,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13769,7 +13769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 5 days
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8e1110d1b198e474eaf9c437a8a6b293, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: ebecf66088a0a0a448b0d8b7995a0337, type: 2}
@@ -13796,8 +13796,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16285,7 +16285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: congratulations you completed the tasks
+  m_text: congratulations you finished the training
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8e1110d1b198e474eaf9c437a8a6b293, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: ebecf66088a0a0a448b0d8b7995a0337, type: 2}
@@ -23170,7 +23170,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 5 days
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8e1110d1b198e474eaf9c437a8a6b293, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: ebecf66088a0a0a448b0d8b7995a0337, type: 2}
@@ -23197,8 +23197,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -34627,7 +34627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2043214817
 RectTransform:
   m_ObjectHideFlags: 0
