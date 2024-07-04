@@ -4,8 +4,11 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameManagerState gameState;
     [SerializeField] private int timeLimit;
+    [SerializeField] private GameObject failWindow;
 
     public string TimeRemaining {get; private set;}
+
+    private int timeRemaining;
 
     private void Start()
     {
@@ -20,18 +23,19 @@ public class GameManager : MonoBehaviour
 
     private void CalculateTime()
     {
-        int time = timeLimit - (int)Time.time;
+        timeRemaining = timeLimit - (int)Time.time;
 
-        string minutes = (time / 60).ToString();
-        string seconds = (time % 60).ToString();
+        string minutes = (timeRemaining / 60).ToString();
+        string seconds = (timeRemaining % 60).ToString();
 
         TimeRemaining = minutes + ":" + seconds;
     }
 
     private void CheckTimer()
     {
-        if (timeLimit <= 0)
+        if (timeRemaining <= 0)
         {
+            failWindow.SetActive(true);
             gameState.ChangeState(GameManagerState.State.FAILED);
         }
     }

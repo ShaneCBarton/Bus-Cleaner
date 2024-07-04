@@ -6,6 +6,7 @@ public class ObjectiveManager : MonoBehaviour
     [SerializeField] private GameManagerState gameState;
     [SerializeField] private ObjectiveCompleteAudioEffect objFX;
     [SerializeField] private TaskTextEffect taskTextEffect;
+    [SerializeField] private GameObject suceededWindow;
 
     public int CompletedObjectives { get; private set; }
 
@@ -13,6 +14,7 @@ public class ObjectiveManager : MonoBehaviour
     {
         if (CompletedObjectives == requiredObjectives)
         {
+            suceededWindow.SetActive(true);
             gameState.ChangeState(GameManagerState.State.COMPLETED);
         }
     }

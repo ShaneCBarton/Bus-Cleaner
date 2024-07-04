@@ -21,11 +21,11 @@ public class GameManagerState : MonoBehaviour
         switch (currentState)
         {
             case State.COMPLETED:
-                Debug.Log("You completed your training!");
+                EnableMouse();
                 break;
 
             case State.FAILED:
-                Debug.Log("You Failed your training!");
+                EnableMouse();
                 break;
         }
     }
@@ -33,5 +33,12 @@ public class GameManagerState : MonoBehaviour
     public void ChangeState(State state)
     {
         currentState = state;
+    }
+
+    private void EnableMouse()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 0;
     }
 }
