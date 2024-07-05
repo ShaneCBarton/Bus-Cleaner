@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void CalculateTime()
     {
-        timeRemaining = timeLimit - (int)Time.time;
+        timeRemaining = timeLimit - (int)Time.timeSinceLevelLoad;
 
         string minutes = (timeRemaining / 60).ToString();
         string seconds = (timeRemaining % 60).ToString();
