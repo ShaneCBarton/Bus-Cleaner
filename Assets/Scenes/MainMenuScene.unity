@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 47498898}
   - component: {fileID: 47498897}
   m_Layer: 5
-  m_Name: HelpText (1)
+  m_Name: HelpPageTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1395,7 +1395,7 @@ GameObject:
   - component: {fileID: 486043761}
   - component: {fileID: 486043762}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: HelpButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2249,7 +2249,7 @@ GameObject:
   - component: {fileID: 555563706}
   - component: {fileID: 555563705}
   m_Layer: 5
-  m_Name: HelpText
+  m_Name: HelpPageOne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2851,7 +2851,7 @@ GameObject:
   - component: {fileID: 842993127}
   - component: {fileID: 842993126}
   m_Layer: 5
-  m_Name: HelpPage
+  m_Name: image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2986,7 +2986,7 @@ GameObject:
   - component: {fileID: 1130103035}
   - component: {fileID: 1130103034}
   m_Layer: 5
-  m_Name: HelpPageOne
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4357,7 +4357,7 @@ GameObject:
   - component: {fileID: 1642934413}
   - component: {fileID: 1642934414}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        timeLimit *= 60;
+        //timeLimit *= 60;
     }
 
     private void Update()

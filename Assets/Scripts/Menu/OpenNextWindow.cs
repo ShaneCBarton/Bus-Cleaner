@@ -8,6 +8,7 @@ public class OpenNextWindow : MonoBehaviour
 
     public void OpenWindow()
     {
+        Time.timeScale = 1;
         StartCoroutine(WindowOpenDelay());
     }
 
